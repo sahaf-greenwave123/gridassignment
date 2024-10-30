@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+
+.contain{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.containgreen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid green;
+    height: 100vh;
+}
+
+.item{
+    border: 2px solid violet;
+}

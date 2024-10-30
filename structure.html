@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header,.nav,.main,.first,.second,.footer{
+            border: 2px solid black;
+            background-color: bisque;
+        }
+
+
+
+        .container{
+            display: grid;
+            grid-template-areas: 
+            "header header header header"
+            "nav main main first"
+            "nav main main second"
+            "footer footer footer footer"
+            ;
+
+        }
+
+
+
+        .header{
+            grid-area: header;
+        }
+        .nav{
+            grid-area: nav;
+        }
+        .main{
+            grid-area: main;
+        }
+        .first{
+            grid-area: first;
+        }
+        .second{
+            grid-area:second;
+        }
+        .footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body class="container">
+    <header class="header">
+        <h1>Header</h1>
+    </header>
+    <nav class="nav">
+        <li>first navber</li>
+        <li>second navber</li>
+        <li>third navber</li>
+    </nav>
+    <main class="main">
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam vel facilis at, fugiat minus quasi, soluta repellat id non recusandae commodi eveniet ea a atque vero expedita omnis optio impedit debitis nobis qui. Doloremque asperiores atque, adipisci ea pariatur perspiciatis molestiae at, neque facilis dolor assumenda quod ducimus error eveniet.</article>
+
+
+
+        <article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae aperiam eius sunt corporis ipsum. Doloremque reprehenderit, iste provident veniam autem dolore est quo incidunt facere vitae consequuntur sint quis quidem officiis inventore? Pariatur, accusamus? Perferendis voluptatibus repellendus, quidem, consequuntur necessitatibus dolor iure incidunt, ut delectus quis nisi? Similique, excepturi voluptate?</article>
+    </main>
+
+
+    <aside class="first">
+        <p>first aside</p>
+    </aside>
+
+    <aside class="second">
+        <p>second aside</p>
+    </aside>
+
+    <footer class="footer">
+        <h1>footer</h1>
+    </footer>
+
+
+</body>
+
+</html>
